@@ -17,11 +17,13 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Application extends BaseEntity {
+
     private String company;
     private String role;
 
     @Enumerated(EnumType.STRING)
     private ApplicationStatus status;
+
     private LocalDate appliedDate;
     private String notes;
 }
